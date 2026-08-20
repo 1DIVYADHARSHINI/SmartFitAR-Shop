@@ -1,0 +1,127 @@
+@import "tailwindcss";
+/* Custom Animations */
+/* Custom Animations with Adjusted Speeds */
+@keyframes spin-slow {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin-medium {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-medium {
+  animation: spin-medium 15s linear infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.5s ease-in-out infinite;
+}
+
+/* Pause animation on parent hover */
+.group:hover .animate-spin-medium {
+  animation-play-state: paused;
+}
+
+/* For the pause button control */
+.pause-animation {
+  animation-play-state: paused !important;
+}
+
+/* Smooth hover effects */
+.hover-scale-105 {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Login page*/
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+}
+
+@keyframes float-slower {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float-slower 10s ease-in-out infinite;
+}
+
+/* Spin animation for loading */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}

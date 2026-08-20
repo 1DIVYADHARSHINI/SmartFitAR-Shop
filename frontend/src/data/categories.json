@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Living Sofas",
+      "subtitle": "Sofas, Sectionals & Lounge",
+      "img": "./category1.jpg",
+      "productCount": 124,
+      "arSupported": true,
+      "badge": "Popular",
+      "icon": "🛋️"
+    },
+    {
+      "id": 2,
+      "title": "Vanity Tables",
+      "subtitle": "Mirrors, Drawers & Stylish Storage",
+      "img": "category2.jpg",
+      "productCount": 89,
+      "arSupported": true,
+      "badge": "AR Ready",
+      "icon": "💄"
+    },
+    {
+      "id": 3,
+      "title": "Nightstand",
+      "subtitle": "Bedside Storage & Everyday Essentials",
+      "img": "category3.jpg",
+      "productCount": 312,
+      "arSupported": true,
+      "badge": "Try-On",
+      "icon": "🌙"
+    },
+    {
+      "id": 4,
+      "title": "Living Sofas",
+      "subtitle": "Comfort, Style & Everyday Relaxation",
+      "img": "category4.jpg",
+      "productCount": 156,
+      "arSupported": true,
+      "badge": "3D View",
+      "icon": "🛋️"
+    },
+    {
+      "id": 5,
+      "title": "Dining Set",
+      "subtitle": "Tables, Chairs & Elegant Dining",
+      "img": "category5.jpg",
+      "productCount": 78,
+      "arSupported": false,
+      "badge": "New",
+      "icon": "🍽️"
+    },
+    {
+      "id": 6,
+      "title": "Coffee Companions",
+      "subtitle": "Tables, Stools & Cozy Corners",
+      "img": "category6.jpg",
+      "productCount": 92,
+      "arSupported": true,
+      "badge": "AR Preview",
+      "icon": "☕"
+    },
+    {
+      "id": 7,
+      "title": "Sleep Sanctuary",
+      "subtitle": "Comfort, Calm & Restful Living",
+      "img": "category7.jpg",
+      "productCount": 203,
+      "arSupported": true,
+      "badge": "Place in Room",
+      "icon": "🎨"
+    },
+    {
+      "id": 8,
+      "title": "Nightstand",
+      "subtitle": "Appliances & Dining",
+      "img": "category8.jpg",
+      "productCount": 145,
+      "arSupported": true,
+      "badge": "Size Check",
+      "icon": "🍽️"
+    }
+  ]
+}

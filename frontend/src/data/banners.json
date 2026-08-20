@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600",
+    "title": "Visualize Products in Your Space",
+    "subtitle": "Experience AR shopping with confidence",
+    "ctaText": "Try 3D Viewer",
+    "ctaLink": "/visualizer",
+    "overlayColor": "rgba(26, 95, 180, 0.15)"
+  },
+  {
+    "id": 2,
+    "img": "./banner1.jpg",
+    "title": "Smart Discount Alerts",
+    "subtitle": "Set your price. We'll notify you when it drops",
+    "ctaText": "Set Up Alerts",
+    "ctaLink": "/wishlist",
+    "overlayColor": "rgba(0, 194, 180, 0.15)"
+  },
+  {
+    "id": 3,
+    "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600",
+    "title": "Follow Trusted Sellers",
+    "subtitle": "Get real-time updates from favorite brands",
+    "ctaText": "Explore Sellers",
+    "ctaLink": "/sellers",
+    "overlayColor": "rgba(255, 176, 32, 0.15)"
+  },
+  {
+    "id": 4,
+    "img": "./banner2.jpg",
+    "title": "Never Miss the Right Price",
+    "subtitle": "Get notified when your wishlist hits your discount",
+    "ctaText": "View Gallery",
+    "ctaLink": "/gallery",
+    "overlayColor": "rgba(26, 95, 180, 0.15)"
+  }
+]
