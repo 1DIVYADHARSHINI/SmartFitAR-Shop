@@ -1,11 +1,5 @@
-{
-  /*This test for mobile device Api login 
-const BASE_URL = "http://10.243.79.232:5000/api/auth";*/
-}
+
 import API_URL from "@/config/api";
-{
-  /*const BASE_URL = "http://localhost:5000/api/auth";*/
-}
 const BASE_URL = `${API_URL}/api/auth`;
 
 export const signupUser = async (data) => {
