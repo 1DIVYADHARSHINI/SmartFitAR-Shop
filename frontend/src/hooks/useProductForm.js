@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createProduct, updateProduct } from "@/api/product.api";
-
+import API_URL from "@/config/api";
 const initialState = {
   productId: null,
 
@@ -92,7 +92,7 @@ export const useProductForm = (onSuccess) => {
       stock: product.stockStatus,
       sellerId: product.seller?._id || "",
       imagePreviews: product.images.map(
-        (img) => `http://localhost:5000/${img}`
+        (img) => `${API_URL}/${img}`
       ),
     });
   };
