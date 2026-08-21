@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import API_URL from "@/config/api";  
 import axios from "axios";
 import DashboardLayout from "../components/layout/DashboardLayout";
 import {
@@ -38,7 +39,7 @@ const Dashboard = () => {
 
   const fetchDashboardData = () => {
     axios
-      .get("http://localhost:5000/api/dashboard/counts")
+      .get(`${API_URL}/api/dashboard/counts`)
       .then((res) => {
         setCounts({
           ...res.data,
