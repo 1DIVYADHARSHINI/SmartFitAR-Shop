@@ -91,7 +91,7 @@ const handleSubmit = async (e) => {
     setIsEdit(true); // ✅ ADD
     setState({
       ...initialState,
-      productId: product._id,
+      productId: product._id || product.id,   // ✅ important
       name: product.name,
       price: product.price,
       rate: product.rating,
