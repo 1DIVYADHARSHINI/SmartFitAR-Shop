@@ -12,7 +12,6 @@ import {
   ExternalLink,
   Hash,
 } from "lucide-react";
-import API_URL from "@/config/api";
 
 const ProductList = ({ products, onEdit, onDelete }) => {
   // Truncate long product names
@@ -98,7 +97,7 @@ const ProductList = ({ products, onEdit, onDelete }) => {
                       {product.images?.[0] ? (
                         <>
                           <img
-                            src={`${API_URL}/${product.images[0]}`}
+                            src={product.images[0]}
                             alt={product.name}
                             className="w-14 h-14 rounded-md object-cover border border-gray-200"
                           />
