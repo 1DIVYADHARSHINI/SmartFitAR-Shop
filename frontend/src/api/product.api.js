@@ -7,7 +7,9 @@ export const getProducts = () => axios.get(BASE_URL);
 
 export const createProduct = (data) => axios.post(`${BASE_URL}/create`, data);
 
-export const updateProduct = (id, data) => axios.put(`${BASE_URL}/${id}`, data);
+export const updateProduct = (id, data) =>axios.put(`${API_URL}/api/products/${id}`, data, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
 
 export const deleteProduct = (id) => axios.delete(`${BASE_URL}/${id}`);
 
