@@ -45,34 +45,46 @@ export const useProductForm = (onSuccess) => {
   };
 
   /* ---------- SUBMIT ---------- */
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  /* ---------- SUBMIT ---------- */
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const formData = new FormData();
+  const formData = new FormData();
 
-    formData.append("name", state.name);
-    formData.append("price", state.price);
-    formData.append("rating", state.rate);
-    formData.append("category", state.category);
-    formData.append("review", state.review);
-    formData.append("discount", state.discount);
-    formData.append("dimensions", state.dimensions);
-    formData.append("description", state.description);
-    formData.append("warranty", state.warranty);
-    formData.append("stockStatus", state.stock);
-    formData.append("seller", state.sellerId);
+  formData.append("name", state.name);
+  formData.append("price", state.price);
+  formData.append("rating", state.rate);
+  formData.append("category", state.category);
+  formData.append("review", state.review);
+  formData.append("discount", state.discount);
+  formData.append("dimensions", state.dimensions);
+  formData.append("description", state.description);
+  formData.append("warranty", state.warranty);
+  formData.append("stockStatus", state.stock);
+  formData.append("seller", state.sellerId);
 
-    state.images.forEach((img) => formData.append("images", img));
-    if (state.modelFile) formData.append("model3D", state.modelFile);
+  state.images.forEach((img) => formData.append("images", img));
+  if (state.modelFile) formData.append("model3D", state.modelFile);
 
-    state.productId
-      ? await updateProduct(state.productId, formData)
-      : await createProduct(formData);
+  try {
+    if (state.productId) {
+      await updateProduct(state.productId, formData);
+    } else {
+      await createProduct(formData);
+    }
 
     setState(initialState);
-    setIsEdit(false); // ✅ ADD
+    setIsEdit(false);
     onSuccess();
-  };
+  } catch (err) {
+    console.error(
+      "Product submission failed:",
+      err.response?.data || err.message
+    );
+
+    alert("Failed to save product. Please try again.");
+  }
+};
 
   /* ---------- EDIT MODE ---------- */
   const fillFormForEdit = (product) => {
